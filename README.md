@@ -2,7 +2,8 @@
 
 Welcome to the **digiplus-intern** repository!
 
-This repository contains all my practice and internship projects as a Mobile Developer Intern at **Digiplus Interactive Corp.**  
+This repository contains all my practice and internship projects as a Mobile Developer Intern at **Digiplus Interactive Corp.**
+
 Each project is organized in its own subdirectory for clarity and easy navigation.
 
 ---
