@@ -16,37 +16,6 @@ This project is a simple calculator mobile application built with Flutter as par
 
 ---
 
-## 📁 Project Structure
-
-- The calculator app is located in the `flutter-apps/calculator` subdirectory.
-- Source code, assets, and configuration files are organized for easy navigation.
-
-```
-digiplus-intern/
-│
-├── flutter-apps/
-│   └── calculator/
-│       ├── lib/
-│       │   └── main.dart
-│       ├── pubspec.yaml
-│       ├── README.md
-│       └── ... (other files)
-└── README.md
-```
-
----
-
-## 🚀 About This Project
-
-| File/Folder                      | Description                            |
-| -------------------------------- | -------------------------------------- |
-| [lib/main.dart](./lib/main.dart) | Main Flutter app entry point           |
-| pubspec.yaml                     | Project configuration and dependencies |
-| android/, ios/, web/             | Platform-specific project files        |
-| ...                              | Additional project files               |
-
----
-
 ## 🛠️ Getting Started
 
 1. **Clone the main repository:**
