@@ -6,12 +6,13 @@
 .pub/
 .pub-cache/
 build/
-coverage/
-pubspec.lock
-.dartServer/
-.dart_analysis_server/
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+.fvm/
 
-# Android specific
+# Android related
 **/android/**/gradle-wrapper.jar
 **/android/.gradle
 **/android/captures/
@@ -20,9 +21,12 @@ pubspec.lock
 **/android/local.properties
 **/android/**/GeneratedPluginRegistrant.java
 **/android/key.properties
-*.jks
+**/android/.idea/
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
 
-# iOS/XCode specific
+# iOS/XCode related
 **/ios/**/*.mode1v3
 **/ios/**/*.mode2v3
 **/ios/**/*.moved-aside
@@ -41,7 +45,9 @@ pubspec.lock
 **/ios/.generated/
 **/ios/Flutter/App.framework
 **/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
 **/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral
 **/ios/Flutter/app.flx
 **/ios/Flutter/app.zip
 **/ios/Flutter/flutter_assets/
@@ -49,51 +55,48 @@ pubspec.lock
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
 
-# macOS specific
+# macOS
 **/macos/Flutter/GeneratedPluginRegistrant.swift
 **/macos/Flutter/ephemeral
 
-# Windows specific
-**/windows/flutter/generated_plugin_registrant.cc
-**/windows/flutter/generated_plugin_registrant.h
-**/windows/flutter/generated_plugins.cmake
+# Web related
+**/web/chrome-device/
 
-# Linux specific
-**/linux/flutter/generated_plugin_registrant.cc
-**/linux/flutter/generated_plugin_registrant.h
-**/linux/flutter/generated_plugins.cmake
+# Coverage
+coverage/
 
-# Web specific
-**/web/favicon.png
-**/web/icons/
-**/web/manifest.json
-
-# IDE specific
-.idea/
-.vscode/
-*.iml
-*.iws
-*.ipr
-.classpath
-.project
-.settings/
-
-# Symbolication related
+# Symbols
 app.*.symbols
 
-# Obfuscation related
-app.*.map.json
-
-# Exceptions to above rules
+# Exceptions to above rules.
 !**/ios/**/default.mode1v3
 !**/ios/**/default.mode2v3
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 
-# Flutter DevTools options
-**/devtools_options.yaml
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
 
-# Temporary build files
-**/build/app/kotlin/compileDebugKotlin/cacheable/
-**/build/shared_preferences_android/kotlin/compileDebugKotlin/cacheable/
+# VS Code related
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
+# FVM version
+.fvm/flutter_sdk
+
+# Temporary files
+.DS_Store
+.temp/
+.tmp/
+*.log
+*.swp

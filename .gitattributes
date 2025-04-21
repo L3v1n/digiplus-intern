@@ -1,59 +1,55 @@
+# Mark the project as primarily Dart
+*.dart linguist-language=Dart
+
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Explicitly declare text files to ensure consistent line endings
+# Flutter/Dart specific
 *.dart text
 *.yaml text
-*.yml text
+*.json text
 *.md text
-*.txt text
-*.h text
-*.cpp text
-*.cc text
-*.swift text
-*.kt text
-*.kts text
 *.gradle text
-*.java text
+*.properties text
+*.xml text
 *.html text
 *.css text
 *.js text
-*.json text
 
-# Declare binary files
+# Files and directories that should be excluded from language statistics
+*.h linguist-detectable=false
+*.cc linguist-detectable=false
+*.cpp linguist-detectable=false
+*.cmake linguist-detectable=false
+Makefile linguist-detectable=false
+CMakeLists.txt linguist-detectable=false
+**/android/gradlew linguist-detectable=false
+**/ios/Flutter/Flutter.xcconfig linguist-detectable=false
+**/ios/Flutter/Generated.xcconfig linguist-detectable=false
+**/ios/Runner.xcworkspace/** linguist-detectable=false
+**/ios/Runner.xcodeproj/** linguist-detectable=false
+
+# Android specific
+*.java text
+*.kt text
+*.kts text
+
+# iOS specific
+*.swift text
+*.h text
+*.m text
+*.mm text
+
+# Graphics
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
 *.ico binary
-*.ttf binary
-*.otf binary
-*.eot binary
-*.woff binary
-*.woff2 binary
+*.svg text
 
-# Flutter specific
-*.pbxproj merge=union
-*.gradle merge=union
+# Documents
+*.pdf binary
 
-# Generated code - don't show changes in diffs
-**/generated_plugin_registrant.* linguist-generated=true
-**/generated_plugins.* linguist-generated=true
-**/GeneratedPluginRegistrant.* linguist-generated=true
-
-# Mark generated files as vendored to exclude from language stats
-*.cc linguist-vendored=true
-*.cpp linguist-vendored=true
-*.h linguist-vendored=true
-android/* linguist-vendored=true
-ios/* linguist-vendored=true
-linux/* linguist-vendored=true
-windows/* linguist-vendored=true
-macos/* linguist-vendored=true
-web/* linguist-vendored=true
-
-# Correctly identify Dart files
-*.dart linguist-language=Dart
-
-# Exclude build directories from language statistics
-build/** linguist-generated=true
+# Gradle wrapper
+*.jar binary
