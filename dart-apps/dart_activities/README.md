@@ -16,37 +16,6 @@ This project contains sample Dart command-line activities and code exercises com
 
 ---
 
-## 📁 Project Structure
-
-- All Dart activities are located in the `dart-apps/dart_activities` subdirectory.
-- Source code, documentation, and related files are organized for easy navigation.
-
-```
-digiplus-intern/
-│
-├── dart-apps/
-│   └── dart_activities/
-│       ├── bin/
-│       │   └── dart_activities.dart
-│       ├── pubspec.yaml
-│       ├── README.md
-│       └── ... (other files)
-└── README.md
-```
-
----
-
-## 🚀 About This Project
-
-| File/Folder                                            | Description                                     |
-| ------------------------------------------------------ | ----------------------------------------------- |
-| [bin/dart_activities.dart](./bin/dart_activities.dart) | Main Dart file with code samples and activities |
-| pubspec.yaml                                           | Project configuration and dependencies          |
-| analysis_options.yaml                                  | Linting and analysis settings                   |
-| ...                                                    | Additional project files                        |
-
----
-
 ## 🛠️ Getting Started
 
 1. **Clone the main repository:**
