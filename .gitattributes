@@ -1,0 +1,42 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly declare text files to ensure consistent line endings
+*.dart text
+*.yaml text
+*.yml text
+*.md text
+*.txt text
+*.h text
+*.cpp text
+*.cc text
+*.swift text
+*.kt text
+*.kts text
+*.gradle text
+*.java text
+*.html text
+*.css text
+*.js text
+*.json text
+
+# Declare binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.eot binary
+*.woff binary
+*.woff2 binary
+
+# Flutter specific
+*.pbxproj merge=union
+*.gradle merge=union
+
+# Generated code - don't show changes in diffs
+**/generated_plugin_registrant.* linguist-generated=true
+**/generated_plugins.* linguist-generated=true
+**/GeneratedPluginRegistrant.* linguist-generated=true
