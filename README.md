@@ -29,12 +29,12 @@ digiplus-intern/
 
 ## 🚀 Projects
 
-| Project Name                                              | Description                                                      |
-| -------------------------------------------------------- | ---------------------------------------------------------------- |
-| [dart_activities](./dart-apps/dart_activities/)          | Sample Dart command-line activities and code exercises            |
-| [calculator](./flutter-apps/calculator/)                 | Simple calculator app built with Flutter                         |
-| [network_checker](./flutter-apps/network_checker/)       | Flutter app to check and display real-time network connectivity  |
-| [shopping_list_manager](./flutter-apps/shopping_list_manager/) | Flutter app to manage shopping lists (add, edit, delete items)   |
+| Project Name                                                   | Description                                                     |
+| -------------------------------------------------------------- | --------------------------------------------------------------- |
+| [dart_activities](./dart-apps/dart_activities/)                | Sample Dart command-line activities and code exercises          |
+| [calculator](./flutter-apps/calculator/)                       | Simple calculator app built with Flutter                        |
+| [network_checker](./flutter-apps/network_checker/)             | Flutter app to check and display real-time network connectivity |
+| [shopping_list_manager](./flutter-apps/shopping_list_manager/) | Flutter app to manage shopping lists (add, edit, delete items)  |
 
 ---
 
@@ -47,8 +47,9 @@ digiplus-intern/
 2. **Navigate to the project directory you want to work on:**
    ```sh
    cd digiplus-intern/<subdirectory>/<project-app>
-   # Example: cd digiplus-intern/flutter-apps/calculator
    ```
+   Example:
+   cd digiplus-intern/flutter-apps/calculator
 
 ---
 
