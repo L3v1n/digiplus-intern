@@ -1,39 +1,62 @@
-# Network Checker
+# Network Checker Flutter App
 
-A Flutter application to check and monitor network connectivity. This project demonstrates the basics of Flutter development, including network status tracking and handling connectivity changes.
+Welcome to the **network_checker** project, part of the [digiplus-intern](https://github.com/L3v1n/digiplus-intern) repository!
 
-## Features
+This project is a simple network connectivity checker mobile application built with Flutter as part of my Mobile Developer Internship at **Digiplus Interactive Corp.**
 
-- Monitor network connectivity.
-- Handle connectivity changes gracefully.
+---
 
-## Installation
+## ✨ Features
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/network_checker.git
+- Check internet connectivity status
+- Real-time network status updates
+- Clean and intuitive user interface
+- Built with Flutter for cross-platform support
+- Well-structured and easy-to-read code
+- Ready for extension with new features
+
+---
+
+## 🛠️ Getting Started
+
+1. **Clone the main repository:**
+   ```sh
+   git clone https://github.com/L3v1n/digiplus-intern.git
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd network_checker
+2. **Navigate to this project directory:**
+   ```sh
+   cd digiplus-intern/flutter-apps/network_checker
    ```
-3. Install dependencies:
-   ```bash
+3. **Get dependencies:**
+   ```sh
    flutter pub get
    ```
-
-## Usage
-
-1. Run the app on an emulator or connected device:
-   ```bash
+4. **Run the app:**
+   ```sh
    flutter run
    ```
-2. Use the app to monitor and manage network connectivity.
 
-## Contributing
+---
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+## 🤝 Contributing
 
-## License
+Contributions are welcome! Please open an issue or submit a pull request in the main repository.
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is maintained as part of the Digiplus Interactive Corp. internship program.
+
+---
+
+## 📄 License
+
+This project is for educational and internship purposes only.
+
+---
+
+## 📬 Contact Me
+
+- **GitHub:** [L3v1n](https://github.com/L3v1n)
+- **Email:** ejcervania@gmail.com
+
+---
+
+**© 2025 Digiplus Interactive Corp.**
