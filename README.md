@@ -18,14 +18,10 @@ digiplus-intern/
 │
 ├── dart-apps/
 │   └── dart_activities/
-│       ├── bin/
-│       ├── pubspec.yaml
-│       ├── README.md
-│       └── ... (other files)
-├── project-1/
-│   └── ... (Project 1 files)
-├── project-2/
-│   └── ... (Project 2 files)
+├── flutter-apps/
+│   ├── calculator/
+│   ├── network_checker/
+│   └── shopping_list_manager/
 └── README.md
 ```
 
@@ -33,12 +29,12 @@ digiplus-intern/
 
 ## 🚀 Projects
 
-| Project Name                                    | Description                                            |
-| ----------------------------------------------- | ------------------------------------------------------ |
-| [dart_activities](./dart-apps/dart_activities/) | Sample Dart command-line activities and code exercises |
-| [project-1](./project-1/)                       | Short description of project 1                         |
-| [project-2](./project-2/)                       | Short description of project 2                         |
-| _Add more as needed_                            |                                                        |
+| Project Name                                              | Description                                                      |
+| -------------------------------------------------------- | ---------------------------------------------------------------- |
+| [dart_activities](./dart-apps/dart_activities/)          | Sample Dart command-line activities and code exercises            |
+| [calculator](./flutter-apps/calculator/)                 | Simple calculator app built with Flutter                         |
+| [network_checker](./flutter-apps/network_checker/)       | Flutter app to check and display real-time network connectivity  |
+| [shopping_list_manager](./flutter-apps/shopping_list_manager/) | Flutter app to manage shopping lists (add, edit, delete items)   |
 
 ---
 
@@ -50,9 +46,7 @@ digiplus-intern/
    ```
 2. **Navigate to the project directory you want to work on:**
    ```sh
-   cd digiplus-intern/dart-apps/dart_activities
-   # or
-   cd digiplus-intern/project-1
+   cd digiplus-intern/<subdirectory>/<project-app>
    ```
 
 ---
