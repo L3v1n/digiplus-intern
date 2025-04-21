@@ -16,6 +16,12 @@ Each project is organized in its own subdirectory for clarity and easy navigatio
 ```
 digiplus-intern/
 │
+├── dart-apps/
+│   └── dart_activities/
+│       ├── bin/
+│       ├── pubspec.yaml
+│       ├── README.md
+│       └── ... (other files)
 ├── project-1/
 │   └── ... (Project 1 files)
 ├── project-2/
@@ -27,24 +33,27 @@ digiplus-intern/
 
 ## 🚀 Projects
 
-| Project Name | Description |
-|--------------|-------------|
-| [project-1](./project-1/) | Short description of project 1 |
-| [project-2](./project-2/) | Short description of project 2 |
-| _Add more as needed_ | |
+| Project Name                                    | Description                                            |
+| ----------------------------------------------- | ------------------------------------------------------ |
+| [dart_activities](./dart-apps/dart_activities/) | Sample Dart command-line activities and code exercises |
+| [project-1](./project-1/)                       | Short description of project 1                         |
+| [project-2](./project-2/)                       | Short description of project 2                         |
+| _Add more as needed_                            |                                                        |
 
 ---
 
 ## 🛠️ Getting Started
 
 1. **Clone this repository:**
-    ```sh
-    git clone https://github.com/L3v1n/digiplus-intern.git
-    ```
+   ```sh
+   git clone https://github.com/L3v1n/digiplus-intern.git
+   ```
 2. **Navigate to the project directory you want to work on:**
-    ```sh
-    cd digiplus-intern/project-1
-    ```
+   ```sh
+   cd digiplus-intern/dart-apps/dart_activities
+   # or
+   cd digiplus-intern/project-1
+   ```
 
 ---
 
