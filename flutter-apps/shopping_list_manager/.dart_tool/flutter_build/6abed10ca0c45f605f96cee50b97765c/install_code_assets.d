@@ -1,0 +1,1 @@
+ C:\\Users\\Elvin.Cervania\\VisualStudioCodeProjects\\Flutter\\shopping_list_manager\\.dart_tool\\flutter_build\\6abed10ca0c45f605f96cee50b97765c\\native_assets.json: 
