@@ -47,9 +47,9 @@ digiplus-intern/
 2. **Navigate to the project directory you want to work on:**
    ```sh
    cd digiplus-intern/<subdirectory>/<project-app>
-   ```
-   Example:
+   # Example:
    cd digiplus-intern/flutter-apps/calculator
+   ```
 
 ---
 
