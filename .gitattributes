@@ -40,3 +40,20 @@
 **/generated_plugin_registrant.* linguist-generated=true
 **/generated_plugins.* linguist-generated=true
 **/GeneratedPluginRegistrant.* linguist-generated=true
+
+# Mark generated files as vendored to exclude from language stats
+*.cc linguist-vendored=true
+*.cpp linguist-vendored=true
+*.h linguist-vendored=true
+android/* linguist-vendored=true
+ios/* linguist-vendored=true
+linux/* linguist-vendored=true
+windows/* linguist-vendored=true
+macos/* linguist-vendored=true
+web/* linguist-vendored=true
+
+# Correctly identify Dart files
+*.dart linguist-language=Dart
+
+# Exclude build directories from language statistics
+build/** linguist-generated=true
