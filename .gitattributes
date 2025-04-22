@@ -1,89 +1,37 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Primary repository languages
-*.dart linguist-language=Dart linguist-detectable=true
-*.yaml linguist-language=YAML linguist-detectable=true
-pubspec.yaml linguist-language=YAML linguist-detectable=true
+# Force the following filetypes to have unix line endings
+*.dart text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
 
-# Mark generated files to be excluded from language statistics
-**/*.g.dart linguist-generated=true
-**/*.freezed.dart linguist-generated=true
-**/*.mocks.dart linguist-generated=true
-**/GeneratedPluginRegistrant.* linguist-generated=true
-**/generated_plugin_registrant.* linguist-generated=true
-**/Flutter/ephemeral/** linguist-generated=true
-**/Flutter/Generated.xcconfig linguist-generated=true
-
-# Explicitly mark CMake files
-CMakeLists.txt linguist-language=CMake
-*.cmake linguist-language=CMake
-**/cmake/** linguist-generated=true
-**/CMakeFiles/** linguist-generated=true
-**/CMakeCache.txt linguist-generated=true
-
-# Platform-specific files - mark as generated to reduce their impact on stats
-**/windows/flutter/** linguist-generated=true
-**/windows/runner/** linguist-generated=true
-**/linux/flutter/** linguist-generated=true
-**/linux/runner/** linguist-generated=true
-**/macos/Flutter/** linguist-generated=true
-**/ios/Flutter/** linguist-generated=true
-**/ios/Runner/GeneratedPluginRegistrant.* linguist-generated=true
-**/android/.gradle/** linguist-generated=true
-**/android/gradle/** linguist-generated=true
-**/android/**/GeneratedPluginRegistrant.java linguist-generated=true
-
-# Native code files - if we want to show them in stats, keep these lines
-# If native code should be hidden from stats, mark these as generated=true instead
-*.h linguist-language=C++
-*.cc linguist-language=C++
-*.cpp linguist-language=C++ 
-*.c linguist-language=C
-*.java linguist-language=Java
-*.kt linguist-language=Kotlin
-*.swift linguist-language=Swift
-*.m linguist-language=Objective-C
-
-# Binary files
+# Denote all files that are truly binary and should not be modified
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
-*.ico binary
-*.mov binary
-*.mp4 binary
-*.mp3 binary
-*.flv binary
-*.fla binary
-*.swf binary
-*.gz binary
-*.zip binary
-*.7z binary
+*.webp binary
 *.ttf binary
-*.eot binary
+*.otf binary
 *.woff binary
 *.woff2 binary
-*.pyc binary
-*.pdf binary
+*.eot binary
+*.ico binary
 
-# Documents
-*.md text diff=markdown
-*.adoc text
-*.textile text
-*.tex text diff=tex
+# Android specific
+*.gradle text eol=lf
+gradlew.bat text eol=crlf
 
-# Scripts
-*.bash text eol=lf
-*.fish text eol=lf
-*.sh text eol=lf
-*.bat text eol=crlf
-*.cmd text eol=crlf
-*.ps1 text eol=crlf
-
-# Serialization
-*.json text
-*.toml text
-*.xml text
-*.yaml text
-*.yml text
+# iOS specific
+*.pbxproj merge=union
+*.storyboard text eol=lf
+*.xib text eol=lf
+*.swift text eol=lf
+*.h text eol=lf
+*.m text eol=lf
