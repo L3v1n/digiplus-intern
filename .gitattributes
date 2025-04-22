@@ -1,16 +1,44 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Dart specific
-*.dart linguist-language=Dart
+# Primary repository languages
+*.dart linguist-language=Dart linguist-detectable=true
+*.yaml linguist-language=YAML linguist-detectable=true
+pubspec.yaml linguist-language=YAML linguist-detectable=true
 
-# Flutter specific
-*.yaml linguist-language=YAML
+# Mark generated files to be excluded from language statistics
+**/*.g.dart linguist-generated=true
+**/*.freezed.dart linguist-generated=true
+**/*.mocks.dart linguist-generated=true
+**/GeneratedPluginRegistrant.* linguist-generated=true
+**/generated_plugin_registrant.* linguist-generated=true
+**/Flutter/ephemeral/** linguist-generated=true
+**/Flutter/Generated.xcconfig linguist-generated=true
 
-# Native code files
+# Explicitly mark CMake files
+CMakeLists.txt linguist-language=CMake
+*.cmake linguist-language=CMake
+**/cmake/** linguist-generated=true
+**/CMakeFiles/** linguist-generated=true
+**/CMakeCache.txt linguist-generated=true
+
+# Platform-specific files - mark as generated to reduce their impact on stats
+**/windows/flutter/** linguist-generated=true
+**/windows/runner/** linguist-generated=true
+**/linux/flutter/** linguist-generated=true
+**/linux/runner/** linguist-generated=true
+**/macos/Flutter/** linguist-generated=true
+**/ios/Flutter/** linguist-generated=true
+**/ios/Runner/GeneratedPluginRegistrant.* linguist-generated=true
+**/android/.gradle/** linguist-generated=true
+**/android/gradle/** linguist-generated=true
+**/android/**/GeneratedPluginRegistrant.java linguist-generated=true
+
+# Native code files - if we want to show them in stats, keep these lines
+# If native code should be hidden from stats, mark these as generated=true instead
 *.h linguist-language=C++
 *.cc linguist-language=C++
-*.cpp linguist-language=C++
+*.cpp linguist-language=C++ 
 *.c linguist-language=C
 *.java linguist-language=Java
 *.kt linguist-language=Kotlin
