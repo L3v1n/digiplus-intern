@@ -1,92 +1,61 @@
-# Mark the project as primarily Dart
-*.dart linguist-language=Dart
-*.dart linguist-detectable=true
-*.dart linguist-vendored=false
-
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Mark generated files
-**/build/** linguist-generated=true
+# Dart specific
+*.dart linguist-language=Dart
 
-# Flutter platform-specific generated code to be excluded
-**/ios/** linguist-vendored=true
-**/android/** linguist-vendored=true
-**/linux/** linguist-vendored=true
-**/macos/** linguist-vendored=true
-**/windows/** linguist-vendored=true
-**/web/** linguist-vendored=true
+# Flutter specific
+*.yaml linguist-language=YAML
 
-# Flutter/Dart specific
-*.dart text
-*.yaml text
-*.json text
-*.md text
-*.gradle text
-*.properties text
-*.xml text
-*.html text
-*.css text
-*.js text
+# Native code files
+*.h linguist-language=C++
+*.cc linguist-language=C++
+*.cpp linguist-language=C++
+*.c linguist-language=C
+*.java linguist-language=Java
+*.kt linguist-language=Kotlin
+*.swift linguist-language=Swift
+*.m linguist-language=Objective-C
 
-# Specifically exclude Makefiles and CMake files
-Makefile linguist-vendored=true
-**/Makefile linguist-vendored=true
-*.mk linguist-vendored=true
-CMakeLists.txt linguist-vendored=true
-*.cmake linguist-vendored=true
-
-# Native code files should not count in language statistics
-*.h linguist-vendored=true
-*.cc linguist-vendored=true
-*.cpp linguist-vendored=true
-*.c linguist-vendored=true
-*.swift linguist-vendored=true
-*.java linguist-vendored=true
-*.kt linguist-vendored=true
-*.kts linguist-vendored=true
-*.m linguist-vendored=true
-*.mm linguist-vendored=true
-
-# Files and directories that should be excluded from language statistics
-*.h linguist-detectable=false
-*.cc linguist-detectable=false
-*.cpp linguist-detectable=false
-*.cmake linguist-detectable=false
-Makefile linguist-detectable=false
-CMakeLists.txt linguist-detectable=false
-**/android/gradlew linguist-detectable=false
-**/ios/Flutter/Flutter.xcconfig linguist-detectable=false
-**/ios/Flutter/Generated.xcconfig linguist-detectable=false
-**/ios/Runner.xcworkspace/** linguist-detectable=false
-**/ios/Runner.xcodeproj/** linguist-detectable=false
-
-# Android specific
-*.java text
-*.kt text
-*.kts text
-
-# iOS specific
-*.swift text
-*.h text
-*.m text
-*.mm text
-
-# Keep Flutter and Dart specific files for language stats
-*.yaml linguist-detectable=true
-pubspec.yaml linguist-detectable=true
-
-# Graphics
+# Binary files
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
 *.ico binary
-*.svg text
-
-# Documents
-*.md text
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.flv binary
+*.fla binary
+*.swf binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.eot binary
+*.woff binary
+*.woff2 binary
+*.pyc binary
 *.pdf binary
 
-# Gradle wrapper
-*.jar binary
+# Documents
+*.md text diff=markdown
+*.adoc text
+*.textile text
+*.tex text diff=tex
+
+# Scripts
+*.bash text eol=lf
+*.fish text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Serialization
+*.json text
+*.toml text
+*.xml text
+*.yaml text
+*.yml text
