@@ -1,37 +1,51 @@
-# Auto detect text files and perform LF normalization
+# Auto detect text files and perform normalization
 * text=auto
 
-# Force the following filetypes to have unix line endings
-*.dart text eol=lf
-*.yaml text eol=lf
-*.yml text eol=lf
-*.json text eol=lf
-*.md text eol=lf
-*.html text eol=lf
-*.css text eol=lf
-*.js text eol=lf
+# Explicitly declare text files to ensure consistent line endings
+*.dart text
+*.yaml text
+*.yml text
+*.json text
+*.html text
+*.md text
+*.txt text
+*.gradle text
+*.properties text
+*.xml text
 
-# Denote all files that are truly binary and should not be modified
+# Binary files
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
+*.ico binary
 *.webp binary
 *.ttf binary
 *.otf binary
 *.woff binary
 *.woff2 binary
-*.eot binary
-*.ico binary
 
-# Android specific
-*.gradle text eol=lf
-gradlew.bat text eol=crlf
+# Flutter/Dart specific
+*.dart linguist-language=Dart
+pubspec.yaml linguist-language=YAML
+*.lock linguist-generated=true
+**/.dart_tool/** linguist-generated=true
+**/build/** linguist-generated=true
+**/ios/Flutter/App.framework/** linguist-generated=true
+**/ios/Flutter/Flutter.framework/** linguist-generated=true
 
-# iOS specific
-*.pbxproj merge=union
-*.storyboard text eol=lf
-*.xib text eol=lf
-*.swift text eol=lf
-*.h text eol=lf
-*.m text eol=lf
+# Android
+*.kt linguist-language=Kotlin
+*.java linguist-language=Java
+**/android/gradlew linguist-vendored
+**/android/gradlew.bat linguist-vendored
+**/android/gradle/wrapper/** linguist-vendored
+
+# iOS
+*.swift linguist-language=Swift
+*.h linguist-language=Objective-C
+*.m linguist-language=Objective-C
+
+# Generated plugin registrant files
+**/generated_plugin_registrant.dart linguist-generated=true
+**/GeneratedPluginRegistrant.* linguist-generated=true
