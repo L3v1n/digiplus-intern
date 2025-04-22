@@ -1,8 +1,21 @@
 # Mark the project as primarily Dart
 *.dart linguist-language=Dart
+*.dart linguist-detectable=true
+*.dart linguist-vendored=false
 
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Mark generated files
+**/build/** linguist-generated=true
+
+# Flutter platform-specific generated code to be excluded
+**/ios/** linguist-vendored=true
+**/android/** linguist-vendored=true
+**/linux/** linguist-vendored=true
+**/macos/** linguist-vendored=true
+**/windows/** linguist-vendored=true
+**/web/** linguist-vendored=true
 
 # Flutter/Dart specific
 *.dart text
@@ -15,6 +28,25 @@
 *.html text
 *.css text
 *.js text
+
+# Specifically exclude Makefiles and CMake files
+Makefile linguist-vendored=true
+**/Makefile linguist-vendored=true
+*.mk linguist-vendored=true
+CMakeLists.txt linguist-vendored=true
+*.cmake linguist-vendored=true
+
+# Native code files should not count in language statistics
+*.h linguist-vendored=true
+*.cc linguist-vendored=true
+*.cpp linguist-vendored=true
+*.c linguist-vendored=true
+*.swift linguist-vendored=true
+*.java linguist-vendored=true
+*.kt linguist-vendored=true
+*.kts linguist-vendored=true
+*.m linguist-vendored=true
+*.mm linguist-vendored=true
 
 # Files and directories that should be excluded from language statistics
 *.h linguist-detectable=false
@@ -40,6 +72,10 @@ CMakeLists.txt linguist-detectable=false
 *.m text
 *.mm text
 
+# Keep Flutter and Dart specific files for language stats
+*.yaml linguist-detectable=true
+pubspec.yaml linguist-detectable=true
+
 # Graphics
 *.png binary
 *.jpg binary
@@ -49,6 +85,7 @@ CMakeLists.txt linguist-detectable=false
 *.svg text
 
 # Documents
+*.md text
 *.pdf binary
 
 # Gradle wrapper
